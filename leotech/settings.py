@@ -18,19 +18,19 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Initialize environment variables
-env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+# env = os.environ.Env()
+# environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool('DEBUG', default=False)
+DEBUG = os.environ.get('DEBUG', default=False)
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', default=[]).split(" ")
 
 
 # Application definition
@@ -79,10 +79,8 @@ WSGI_APPLICATION = 'leotech.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': env.db(),
-# }
+database_url = os.environ.get("DATABASE_URL")
+DATABASES = ["default"] = dj_database_url.parse(database_url)
 
 
 DATABASES = {
