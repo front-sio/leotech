@@ -1,6 +1,13 @@
 from django.db import models
 
-class Message(models.Model):
-    name = models.CharField(max_length=255, null=True)
-    email = models.CharField(max_length=100, null=True)
+from django.db import models
+
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
     message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+

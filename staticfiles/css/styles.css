@@ -6,13 +6,13 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #2B2B2B; /* Dark color from the logo */
+    background-color: #2e3192 !important; /* Dark color from the logo */
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.bckg-primary {
-    background-color: #088ec7 !important;
+.backg-primary {
+    background-color: #2e3192 !important;
 }
 
 .navbar-brand {
@@ -242,6 +242,34 @@ footer p {
     margin: 0;
 }
 
+/* App Download Section */
+#appDownload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#appDownload .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appDownload .row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#appDownload .download-btn {
+    text-align: center;
+}
+
+#appDownload .download-btn button {
+    margin: 5px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
@@ -264,21 +292,4 @@ footer p {
         width: 100%;
         height: auto;
     }
-}
-
-
-
-#appDownload {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#appDownload .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
