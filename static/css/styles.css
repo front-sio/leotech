@@ -292,4 +292,9 @@ footer p {
         width: 100%;
         height: auto;
     }
+
+    #services .card img {
+        max-height: 200px; /* Set a max height for images on small devices */
+        object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    }
 }
