@@ -6,13 +6,13 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #2e3192 !important; /* Dark color from the logo */
+    background-color: #2B2B2B; /* Dark color from the logo */
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.backg-primary {
-    background-color: #2e3192 !important;
+.bckg-primary {
+    background-color: #088ec7 !important;
 }
 
 .navbar-brand {
@@ -40,6 +40,10 @@ body {
 
 .nav-link.active {
     color: #00AEEF; /* Light blue color from the logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #FFFFFF; /* White color for menu icon */
 }
 
 /* Carousel Controls */
@@ -77,7 +81,7 @@ header {
     background-color: #5A67D8;
     color: #F7FAFC;
     padding: 6rem 0;
-    margin-top: 56px; /* height of the fixed navbar */
+    margin-top: 6px; /* height of the fixed navbar */
 }
 
 header h1 {
@@ -242,34 +246,6 @@ footer p {
     margin: 0;
 }
 
-/* App Download Section */
-#appDownload {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#appDownload .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#appDownload .row {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#appDownload .download-btn {
-    text-align: center;
-}
-
-#appDownload .download-btn button {
-    margin: 5px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
@@ -292,4 +268,29 @@ footer p {
         width: 100%;
         height: auto;
     }
+
+
+    #services .card img {
+        max-height: 200px; /* Set a max height for images on small devices */
+        object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    }
 }
+
+/* App Download Section */
+#appDownload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#appDownload .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
