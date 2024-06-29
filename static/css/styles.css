@@ -274,6 +274,10 @@ footer p {
         max-height: 200px; /* Set a max height for images on small devices */
         object-fit: cover; /* Ensure the image covers the entire area without stretching */
     }
+
+    .navbar-brand {
+        margin-left: 20px !important;
+    }
 }
 
 /* App Download Section */
