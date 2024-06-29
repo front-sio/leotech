@@ -5,8 +5,9 @@ body {
 }
 
 /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
-    background-color: #2B2B2B; /* Dark color from the logo */
+    background-color: #088ec7; /* Dark color from the logo */
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -42,8 +43,17 @@ body {
     color: #00AEEF; /* Light blue color from the logo */
 }
 
-.navbar-toggler-icon {
-    background-color: #FFFFFF; /* White color for menu icon */
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon{
+    color: #FFFFFF; /* White color for menu icon */
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
 }
 
 /* Carousel Controls */
@@ -278,6 +288,13 @@ footer p {
     .navbar-brand {
         margin-left: 20px !important;
     }
+
+
+    .navbar-toggler-icon{
+        color: #FFFFFF; /* White color for menu icon */
+        font-size: 1.5rem;
+    }
+    
 }
 
 /* App Download Section */
