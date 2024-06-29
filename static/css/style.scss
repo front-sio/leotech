@@ -1,0 +1,30 @@
+// styles.scss
+$primary-color: #5A67D8;
+$secondary-color: #F7FAFC;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2D3748;
+}
+
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 3rem 0;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        margin: 0 0.5rem;
+    }
+}
+
+// More styles to follow for other sections
