@@ -1,1 +1,1 @@
-web: gunicorn leotech.wsgi --log-file -
+web: gunicorn leotech.wsgi
