@@ -15,7 +15,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary bckg-primary fixed-top"
-        style="background-color: #00AEEF !important;">
+        style="background-color: #088ec7 !important;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/static/assets/logo/logo_white_icon.png" alt="LEOTECH Logo" height="40">
@@ -257,7 +257,21 @@
             <p class="lead">Have questions? We're here to help.</p>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1>Contact info</h1>
+                    <div class="row">
+                        <div class="col sm-6 col-md-6 col-lg-6 address-info">
+                            <h3>Our Address</h3>
+                            <span>
+                                Maji Chumvi Road,
+                                Kimara Korogwe, Ubungo,
+                                Dar es salaam, Tanzania.
+                            </span>
+                        </div>
+                        <div class="col sm-6 col-md-6 col-lg-6 contact-info">
+                            <h3>Contact Us</h3>
+                            <div><span>info@leotech.co.tz</span></div>
+                            <div><span>+255 762 232 797</span></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <form action="{% url 'home' %}" method="POST">
@@ -267,6 +281,9 @@
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" name="phone" class="form-control" placeholder="Your Mobile">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" name="message" rows="4" placeholder="Your Message"

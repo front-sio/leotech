@@ -7,7 +7,7 @@ def index(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')  # Assuming you have a success page
+            return redirect('contact_success')  # Assuming you have a success page
     else:
         form = ContactForm()
     return render(request, 'leotech/index.html', {'form': form})
